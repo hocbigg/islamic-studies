@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Islamic Studies: Advanced Topics</title>
+  <meta name="description" content="Islamic Studies: Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/islamic-studies/advanced_topics.html">
+  <meta property="og:title" content="Islamic Studies: Advanced Topics">
+  <meta property="og:description" content="Islamic Studies: Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/islamic-studies/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/islamic-studies/">Islamic Studies</a></li>
+      <li><a href="/islamic-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/islamic-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="islamic-studies-advanced-topics">Islamic Studies: Advanced Topics</h1>
+<p>This curriculum branches out from the core undergraduate foundation into distinct specialization tracks for self-directed learners ready to explore advanced methodologies, theoretical debates, and contemporary applications. Learners should select one or two tracks aligned with their specific intellectual or research interests rather than attempting to study all tracks simultaneously.</p>
+<ul>
+<li><strong>Islamic Law and Legal Theory:</strong> Explores the epistemological mechanics of jurisprudence (<em>uṣūl al-fiqh</em>), the higher objectives of the law (<em>maqāṣid</em>), legal maxims (<em>qawāʿid</em>), and comparative methodology (<em>ikhtilāf</em>).</li>
+<li><strong>Islamic Philosophy and Dialectical Theology:</strong> Investigates the classical intellectual traditions of <em>falsafa</em> and <em>kalām</em>, covering peripatetic metaphysics, epistemological debates, and theological polemics.</li>
+<li><strong>Sufism and Islamic Spirituality:</strong> Examines <em>taṣawwuf</em> and <em>ʿirfān</em> as structured traditions of spiritual psychology, mystical hermeneutics, and contemplative metaphysics.</li>
+<li><strong>Contemporary Islamic Thought and Modernity:</strong> Analyzes how modern Muslim intellectuals confront the nation-state, constitutionalism, post-colonial epistemology, and gender jurisprudence.</li>
+</ul>
+<h2 id="islamic-law-and-legal-theory">Islamic Law and Legal Theory</h2>
+<p>Moves beyond basic legal rulings to examine the underlying philosophy, hermeneutical rules, higher objectives, and comparative frameworks that jurists use to derive and adapt Islamic law.</p>
+<p>Advanced Legal Theory (Usul al-Fiqh): <a href="https://books.google.com/books?isbn=9780521599863" target="_blank" rel="noopener noreferrer">A History of Islamic Legal Theories by Wael B. Hallaq (Cambridge University Press)</a> - Traces the historical and epistemological evolution of Sunni legal theory from its formative period through modernity, detailing the debates surrounding consensus (<em>ijmāʿ</em>), analogy (<em>qiyās</em>), and juristic authority.</p>
+<p>Higher Objectives of the Law (Maqasid al-Shari'ah): <a href="https://archive.org/details/maqasidalshariah0000auda" target="_blank" rel="noopener noreferrer">Maqasid Al-Shariah as Philosophy of Islamic Law: A Systems Approach by Jasser Auda (IIIT)</a> - Bridges classical teleological theories of al-Ghazālī and al-Shāṭibī with modern systems analysis, providing an essential framework for contemporary legal reform and dynamic independent reasoning (<em>ijtihād</em>).</p>
+<p>Comparative Jurisprudence (Ikhtilaf): <a href="https://archive.org/details/BidayatAl-mujtahidTheDistinguishedJuristsPrimerVol2" target="_blank" rel="noopener noreferrer">The Distinguished Jurist's Primer (Bidayat al-Mujtahid) by Ibn Rushd (Garnet Publishing)</a> - A classical masterpiece of comparative <em>fiqh</em> by Averroes that systematically explains why the major legal schools disagree, attributing differences to conflicting linguistic signals, transmission variants, and analogical methods.</p>
+<p>Legal Maxims (Qawa'id Fiqhiyyah): <a href="https://books.google.com/books?isbn=9781107080997" target="_blank" rel="noopener noreferrer">Doubt in Islamic Law: A History of Legal Maxims, Interpretation, and Islamic Criminal Law by Intisar A. Rabb (Cambridge University Press)</a> - Examines the operation of substantive legal maxims through historical case studies, demonstrating how jurists used the principle of doubt (<em>shubha</em>) to restrain statutory penalties and establish institutional authority.</p>
+<h2 id="islamic-philosophy-and-dialectical-theology">Islamic Philosophy and Dialectical Theology</h2>
+<p>Engages with the intellectual traditions of <em>falsafa</em> (Greco-Islamic philosophy) and <em>kalām</em> (dialectical theology) across the classical, medieval, and post-classical periods.</p>
+<p>Comprehensive History of Islamic Philosophy: <a href="https://historyofphilosophy.net/islamic" target="_blank" rel="noopener noreferrer">Philosophy in the Islamic World by Peter Adamson (History of Philosophy Without Any Gaps)</a> - A free audio course of more than 80 episodes detailing the entire history of philosophy in the Islamic world from the early translation movement through Avicenna, Averroes, and the post-classical traditions.</p>
+<p>Dialectical Theology (Kalam): <a href="https://archive.org/details/the-cambridge-companion-to-classical-islamic-theology" target="_blank" rel="noopener noreferrer">The Cambridge Companion to Classical Islamic Theology edited by Tim Winter (Cambridge University Press)</a> - A comprehensive academic collection examining the theological doctrines, atomistic physics, epistemological disputes, and historical developments of the Muʿtazilite, Ashʿarī, Māturīdī, and Ḥanbalī traditions.</p>
+<p>The Philosophical-Theological Polemic: <a href="https://books.google.com/books?isbn=9780842524667" target="_blank" rel="noopener noreferrer">The Incoherence of the Philosophers (Tahafut al-Falasifah) by Abu Hamid al-Ghazali, translated by Michael E. Marmura (BYU Press)</a> - Al-Ghazālī's primary critique of classical peripatetic philosophy, setting out twenty distinct challenges against Avicennian physics, metaphysics, causality, and the eternity of the world.</p>
+<p>Peripatetic Metaphysics: <a href="https://books.google.com/books?isbn=9780842526296" target="_blank" rel="noopener noreferrer">The Metaphysics of The Healing (al-Ilahiyyat min Kitab al-Shifa') by Avicenna, translated by Michael E. Marmura (BYU Press)</a> - The magnum opus of classical Islamic Aristotelianism, articulating the distinctions between essence and existence and formulating the proof of the Necessary Existent (<em>wājib al-wujūd</em>).</p>
+<p>Post-Classical Metaphysics (Hikmat al-Muta'aliyah): <a href="https://books.google.com/books?isbn=9780415490733" target="_blank" rel="noopener noreferrer">Mulla Sadra and Metaphysics: Modulation of Being by Sajjad H. Rizvi (Routledge)</a> - An analytical study of Mullā Ṣadrā's synthesis of Peripatetic logic, Illuminationist theosophy, and Sufi metaphysics, focusing on the doctrine of the gradation of being (<em>tashkīk al-wujūd</em>).</p>
+<h2 id="sufism-and-islamic-spirituality">Sufism and Islamic Spirituality</h2>
+<p>Approaches <em>taṣawwuf</em> not as folklore, but as a systematic textual discipline centered on spiritual psychology, contemplative discipline, and metaphysical inquiry.</p>
+<p>Classical Sufi Manuals and Terminology: <a href="https://archive.org/details/QushayriRisala" target="_blank" rel="noopener noreferrer">Al-Qushayri's Epistle on Sufism (Al-Risala al-Qushayriyya) translated by Alexander D. Knysh (Garnet Publishing)</a> - The classical 11th-century textbook establishing the orthodoxy of Sufism and delineating the technical vocabulary of spiritual stations (<em>maqāmāt</em>) and experiential states (<em>aḥwāl</em>).</p>
+<p>Spiritual Psychology and Therapeutics: <a href="https://books.google.com/books?isbn=9781887752312" target="_blank" rel="noopener noreferrer">Marvels of the Heart (Kitab Sharh 'Aja'ib al-Qalb) by Abu Hamid al-Ghazali, translated by Walter James Skellie (Fons Vitae)</a> - Book 21 of the <em>Iḥyāʾ ʿUlūm al-Dīn</em>, providing a taxonomy of the inner self through four concepts—heart (<em>qalb</em>), spirit (<em>rūḥ</em>), lower soul (<em>nafs</em>), and intellect (<em>ʿaql</em>)—and their moral diseases.</p>
+<p>Metaphysics of Sufism (Wahdat al-Wujud): <a href="https://archive.org/details/sufipathofknowle0000chit" target="_blank" rel="noopener noreferrer">The Sufi Path of Knowledge: Ibn al-'Arabi's Metaphysics of Imagination by William C. Chittick (SUNY Press)</a> - The standard exposition of Ibn ʿArabī's <em>al-Futūḥāt al-Makkiyya</em>, organizing his teachings on divine names, the ontology of imagination (<em>khayāl</em>), and cosmic theophany into a unified framework.</p>
+<p>Akbarian Metaphysics and Hermeneutics: <a href="https://ibnarabisociety.org/podcasts-and-videos/" target="_blank" rel="noopener noreferrer">Podcasts and Videos: Lectures on Ibn 'Arabi and Islamic Esotericism (Muhyiddin Ibn 'Arabi Society)</a> - An open multimedia archive of academic lectures and conference symposia exploring Ibn ʿArabī's ontology, symbolic Quranic hermeneutics, and mystical literature.</p>
+<h2 id="contemporary-islamic-thought-and-modernity">Contemporary Islamic Thought and Modernity</h2>
+<p>Examines how Muslim thinkers have responded to the political, epistemological, and legal upheavals brought by European colonialism, the modern nation-state, and secularization.</p>
+<p>Constitutionalism and Modern Governance: <a href="https://www.coursera.org/learn/muslimworld" target="_blank" rel="noopener noreferrer">Constitutional Struggles in the Muslim World (University of Copenhagen on Coursera)</a> - A 10-week university course analyzing constitutional developments, secularization, the codification of <em>sharīʿah</em>, and state-building from the Ottoman Tanzimat to the Arab Spring.</p>
+<p>The Nation-State and Islamic Governance: <a href="https://books.google.com/books?isbn=9780231162579" target="_blank" rel="noopener noreferrer">The Impossible State: Islam, Politics, and Modernity's Moral Predicament by Wael B. Hallaq (Columbia University Press)</a> - A comparative critique asserting that the modern sovereign, bureaucratic nation-state is structurally and morally antithetical to the decentralized, moral-legal paradigm of classical Islamic governance.</p>
+<p>Modernist Reform and Democratic Thought: <a href="https://books.google.com/books?isbn=9780195116229" target="_blank" rel="noopener noreferrer">Liberal Islam: A Sourcebook edited by Charles Kurzman (Oxford University Press)</a> - An anthology of primary source writings by 32 modern Muslim intellectuals debating the theological justification for democracy, civil rights, religious freedom, and gender equality.</p>
+<p>Hermeneutics of Authority and Gender Jurisprudence: <a href="https://books.google.com/books?isbn=9781851682621" target="_blank" rel="noopener noreferrer">Speaking in God's Name: Islamic Law, Authority and Women by Khaled Abou El Fadl (Oneworld Publications)</a> - A study of Islamic legal hermeneutics that differentiates between legitimate religious authority and authoritarian decrees (<em>fatwas</em>) that undermine the moral objectives of the law in relation to women.</p>
+<p>Decoloniality and Knowledge Production: <a href="https://books.google.com/books?isbn=9780231183093" target="_blank" rel="noopener noreferrer">Restating Orientalism: A Critique of Modern Knowledge by Wael B. Hallaq (Columbia University Press)</a> - A philosophical critique of Enlightenment epistemologies, tracing how modern academic disciplines have represented and shaped the study of the Islamic world under colonial conditions.</p>
+    </article>
+  </main>
+
+</body>
+</html>
